@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Pitch Competitions</title>
+    <link rel="stylesheet" href="competitions.css" />
+  </head>
+  <body>
+    <a href="index.html" class="back"> <button>Home</button></a>
+
+    <div class="container">
+      <!-- Competition 1 -->
+      <div class="competition-block" onclick="expandBlock(this)">
+        <h2>Wharton Investment Competition</h2>
+        <p class="description">
+          Students simulate the role of investment professionals and pitch their
+          investment strategies to a panel of experts.
+        </p>
+        <div
+          class="more-info"
+          style="display: none"
+          onclick="event.stopPropagation()"
+        >
+          <p>
+            Team Size: 4-7 members<br />
+            Last Day for Registration: October 1, 2024<br />
+            Description: Students simulate the role of investment professionals
+            and pitch their investment strategies to a panel of experts.<br />
+            Main Theme: Investment Strategy<br />
+            Details:<br />
+            - Submission Requirements: A 10-minute video pitch, a written
+            report, and an Excel spreadsheet with financial models.<br />
+            - Judging Criteria: Originality, feasibility, financial analysis,
+            and presentation quality.<br />
+            - Prizes:Cash prizes, certificates, and a chance to present at the
+            Wharton School.
+          </p>
+          <button onclick="showConnectForm(event, this)">Connect Me</button>
+          <div class="connect-form" style="display: none">
+            <h3>Enter your details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name1" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email1" name="email" />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone1" name="phone" />
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade1" name="grade" />
+            <label for="skills">Key Skills:</label>
+            <select id="skills1" name="skills">
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Persuasive Communication">
+                Persuasive Communication
+              </option>
+              <option value="Market Analysis">Market Analysis</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Customer Engagement">Customer Engagement</option>
+              <option value="Presentation Design">Presentation Design</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Software Development">Software Development</option>
+              <option value="User Experience (UX) Design">
+                User Experience (UX) Design
+              </option>
+              <option value="Financial Planning">Financial Planning</option>
+              <option value="Competitive Analysis">Competitive Analysis</option>
+              <option value="Team Collaboration">Team Collaboration</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+            </select>
+            <button type="button" onclick="save('competition1')">Submit</button>
+          </div>
+          <div class="user-list">
+            <h3>Connected Users:</h3>
+            <table id="userListTable1">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Grade</th>
+                  <th>Key Skills</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competition 2 -->
+      <div class="competition-block" onclick="expandBlock(this)">
+        <h2>University of Melbourne India Case Competition</h2>
+        <p class="description">
+          Participants solve real-world business problems faced by companies
+          operating in India and pitch their solutions.
+        </p>
+        <div
+          class="more-info"
+          style="display: none"
+          onclick="event.stopPropagation()"
+        >
+          <p>
+            Team Size: 3-4 members<br />
+            Last Day for Registration: November 10, 2024<br />
+            Description: Participants solve real-world business problems faced
+            by companies operating in India and pitch their solutions.<br />
+            Main Theme: Business Strategy and Problem-Solving<br />
+            Details:<br />
+            - Submission Requirements:A 10-slide pitch deck and a 15-minute live
+            presentation.<br />
+            - Judging Criteria: Strategic thinking, practicality, cultural
+            understanding, and presentation skills.<br />
+            - Prizes:Internships, mentorship opportunities, and recognition from
+            the University of Melbourne.
+          </p>
+          <button onclick="showConnectForm(event, this)">Connect Me</button>
+          <div class="connect-form" style="display: none">
+            <h3>Enter your details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name2" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email2" name="email" />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone2" name="phone" />
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade2" name="grade" />
+            <label for="skills">Key Skills:</label>
+            <select id="skills2" name="skills">
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Persuasive Communication">
+                Persuasive Communication
+              </option>
+              <option value="Market Analysis">Market Analysis</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Customer Engagement">Customer Engagement</option>
+              <option value="Presentation Design">Presentation Design</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Software Development">Software Development</option>
+              <option value="User Experience (UX) Design">
+                User Experience (UX) Design
+              </option>
+              <option value="Financial Planning">Financial Planning</option>
+              <option value="Competitive Analysis">Competitive Analysis</option>
+              <option value="Team Collaboration">Team Collaboration</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+            </select>
+            <button type="button" onclick="save('competition2')">Submit</button>
+          </div>
+          <div class="user-list">
+            <h3>Connected Users:</h3>
+            <table id="userListTable2">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Grade</th>
+                  <th>Key Skills</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competition 3 -->
+      <div class="competition-block" onclick="expandBlock(this)">
+        <h2>Crimson Case Competition</h2>
+        <p class="description">
+          Students tackle various case studies from different industries and
+          present their strategic solutions.
+        </p>
+        <div
+          class="more-info"
+          style="display: none"
+          onclick="event.stopPropagation()"
+        >
+          <p>
+            Team Size: 2-4 members<br />
+            Last Day for Registration: September 20, 2024<br />
+            Description: Students tackle various case studies from different
+            industries and present their strategic solutions.<br />
+            Main Theme: Multi-Industry Case Studies<br />
+            Details:<br />
+            - Submission Requirements: A 10-minute video pitch and a
+            comprehensive case report.<br />
+            - Judging Criteria: Analytical skills, creativity, implementation
+            plan, and communication.<br />
+            - Prizes: Scholarships, internships, and networking opportunities
+            with industry leaders.
+          </p>
+          <button onclick="showConnectForm(event, this)">Connect Me</button>
+          <div class="connect-form" style="display: none">
+            <h3>Enter your details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name3" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email3" name="email" />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone3" name="phone" />
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade3" name="grade" />
+            <label for="skills">Key Skills:</label>
+            <select id="skills3" name="skills">
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Persuasive Communication">
+                Persuasive Communication
+              </option>
+              <option value="Market Analysis">Market Analysis</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Customer Engagement">Customer Engagement</option>
+              <option value="Presentation Design">Presentation Design</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Software Development">Software Development</option>
+              <option value="User Experience (UX) Design">
+                User Experience (UX) Design
+              </option>
+              <option value="Financial Planning">Financial Planning</option>
+              <option value="Competitive Analysis">Competitive Analysis</option>
+              <option value="Team Collaboration">Team Collaboration</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+            </select>
+            <button type="button" onclick="save('competition3')">Submit</button>
+          </div>
+          <div class="user-list">
+            <h3>Connected Users:</h3>
+            <table id="userListTable3">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Grade</th>
+                  <th>Key Skills</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competition 4 -->
+      <div class="competition-block" onclick="expandBlock(this)">
+        <h2>Harvard Social Impact Challenge</h2>
+        <p class="description">
+          Teams develop and pitch innovative solutions to social and
+          environmental problems.
+        </p>
+        <div
+          class="more-info"
+          style="display: none"
+          onclick="event.stopPropagation()"
+        >
+          <p>
+            Team Size: 4-5 members<br />
+            Last Day for Registration: December 15, 2024<br />
+            Description: Teams develop and pitch innovative solutions to social
+            and environmental problems.<br />
+            Main Theme: Social and Environmental Impact<br />
+            Details:<br />
+            - Submission Requirements: A 5-page proposal and a 10-minute
+            presentation.<br />
+            - Judging Criteria: Impact potential, innovation, feasibility, and
+            presentation.<br />
+            - Prizes: Grants, incubation support, and exposure to social impact
+            investors.
+          </p>
+          <button onclick="showConnectForm(event, this)">Connect Me</button>
+          <div class="connect-form" style="display: none">
+            <h3>Enter your details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name4" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email4" name="email" />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone4" name="phone" />
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade4" name="grade" />
+            <label for="skills">Key Skills:</label>
+            <select id="skills4" name="skills">
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Persuasive Communication">
+                Persuasive Communication
+              </option>
+              <option value="Market Analysis">Market Analysis</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Customer Engagement">Customer Engagement</option>
+              <option value="Presentation Design">Presentation Design</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Software Development">Software Development</option>
+              <option value="User Experience (UX) Design">
+                User Experience (UX) Design
+              </option>
+              <option value="Financial Planning">Financial Planning</option>
+              <option value="Competitive Analysis">Competitive Analysis</option>
+              <option value="Team Collaboration">Team Collaboration</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+            </select>
+            <button type="button" onclick="save('competition4')">Submit</button>
+          </div>
+          <div class="user-list">
+            <h3>Connected Users:</h3>
+            <table id="userListTable4">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Grade</th>
+                  <th>Key Skills</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competition 5 -->
+      <div class="competition-block" onclick="expandBlock(this)">
+        <h2>MIT LaunchX</h2>
+        <p class="description">
+          Aspiring entrepreneurs develop and launch startups with guidance from
+          industry experts.
+        </p>
+        <div
+          class="more-info"
+          style="display: none"
+          onclick="event.stopPropagation()"
+        >
+          <p>
+            Team Size: 3-5 members<br />
+            Last Day for Registration: January 5, 2025<br />
+            Description: Aspiring entrepreneurs develop and launch startups with
+            guidance from industry experts.<br />
+            Main Theme: Startup Creation and Growth<br />
+            Details:<br />
+            - Submission Requirements: A business plan, a prototype, and a pitch
+            presentation.<br />
+            - Judging Criteria: Innovation, market potential, business model,
+            and execution plan.<br />
+            - Prizes:Seed funding, mentorship, and access to MIT's
+            entrepreneurial ecosystem.
+          </p>
+          <button onclick="showConnectForm(event, this)">Connect Me</button>
+          <div class="connect-form" style="display: none">
+            <h3>Enter your details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name5" name="name" />
+            <label for="email">Email:</label>
+            <input type="email" id="email5" name="email" />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone5" name="phone" />
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade5" name="grade" />
+            <label for="skills">Key Skills:</label>
+            <select id="skills5" name="skills">
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Persuasive Communication">
+                Persuasive Communication
+              </option>
+              <option value="Market Analysis">Market Analysis</option>
+              <option value="Product Development">Product Development</option>
+              <option value="Customer Engagement">Customer Engagement</option>
+              <option value="Presentation Design">Presentation Design</option>
+              <option value="Technical Writing">Technical Writing</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Data Analysis">Data Analysis</option>
+              <option value="Software Development">Software Development</option>
+              <option value="User Experience (UX) Design">
+                User Experience (UX) Design
+              </option>
+              <option value="Financial Planning">Financial Planning</option>
+              <option value="Competitive Analysis">Competitive Analysis</option>
+              <option value="Team Collaboration">Team Collaboration</option>
+              <option value="Innovation Strategy">Innovation Strategy</option>
+            </select>
+            <button type="button" onclick="save('competition5')">Submit</button>
+          </div>
+          <div class="user-list">
+            <h3>Connected Users:</h3>
+            <table id="userListTable5">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Grade</th>
+                  <th>Key Skills</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script2.js"></script>
+  </body>
+</html>
